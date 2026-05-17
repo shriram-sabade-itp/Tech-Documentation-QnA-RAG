@@ -1,0 +1,57 @@
+2026-05-18T00:26:29.150615+0530 | INFO | Starting INGESTION SERVICE...
+2026-05-18T00:26:29.150615+0530 | INFO | Loading embedding model: all-MiniLM-L6-v2
+2026-05-18T00:26:35.087277+0530 | INFO | Initializing ChromaDB
+2026-05-18T00:26:40.860434+0530 | INFO | Initializing ChromaDB
+2026-05-18T00:27:42.108341+0530 | INFO | Starting batch ingestion: 3 files
+2026-05-18T00:27:42.118746+0530 | INFO | Starting ingestion: ./Mock_Ingestion_files/sample1.txt
+2026-05-18T00:27:42.137051+0530 | INFO | Starting structured extraction
+2026-05-18T00:27:42.137051+0530 | INFO | Extracted 1 blocks
+2026-05-18T00:27:42.141108+0530 | INFO | Starting chunking pipeline
+2026-05-18T00:27:42.141108+0530 | INFO | Generated 5 parent chunks and 18 child chunks
+2026-05-18T00:27:43.625734+0530 | INFO | Generated embeddings for 23 chunks
+2026-05-18T00:27:43.625734+0530 | INFO | [SUCCESS] File: ./Mock_Ingestion_files/sample1.txt | chunks=23
+2026-05-18T00:27:43.625734+0530 | ERROR | [SKIP] File not found: ./Mock_Ingestion_files/sample2.txt
+2026-05-18T00:27:43.625734+0530 | ERROR | [SKIP] File not found: ./Mock_Ingestion_files/no-file.txt
+2026-05-18T00:27:43.625734+0530 | INFO | TOTAL INGESTED CHUNKS: 23
+2026-05-18T00:27:43.625734+0530 | INFO | SUCCESSFUL FILES: 1
+2026-05-18T00:27:43.625734+0530 | INFO | FAILED FILES: 2
+2026-05-18T00:27:43.625734+0530 | INFO | WARNING FILES: 0
+2026-05-18T00:27:43.642193+0530 | INFO | Building indexes...
+2026-05-18T00:27:43.642193+0530 | INFO | Starting hybrid indexing
+2026-05-18T00:27:44.164927+0530 | INFO | Upserted 23 chunks into ChromaDB
+2026-05-18T00:27:44.180614+0530 | INFO | Building BM25 index
+2026-05-18T00:27:44.180614+0530 | INFO | Hybrid indexing completed
+2026-05-18T00:28:46.683571+0530 | INFO | Starting batch ingestion: 3 files
+2026-05-18T00:28:46.686810+0530 | INFO | Starting ingestion: ./Mock_Ingestion_files/sample1.txt
+2026-05-18T00:28:46.701187+0530 | WARNING | [SKIP] Duplicate document: ./Mock_Ingestion_files/sample1.txt
+2026-05-18T00:28:46.703212+0530 | INFO | Starting ingestion: ./Mock_Ingestion_files/sample2.pdf
+2026-05-18T00:28:46.705287+0530 | ERROR | [UNSUPPORTED] Unsupported or unreadable file: ./Mock_Ingestion_files/sample2.pdf
+2026-05-18T00:28:46.706857+0530 | INFO | Starting ingestion: ./Mock_Ingestion_files/empty.txt
+2026-05-18T00:28:46.713996+0530 | INFO | Starting structured extraction
+2026-05-18T00:28:46.717665+0530 | INFO | Extracted 0 blocks
+2026-05-18T00:28:46.717665+0530 | INFO | Starting chunking pipeline
+2026-05-18T00:28:46.717665+0530 | INFO | Generated 0 parent chunks and 0 child chunks
+2026-05-18T00:28:46.717665+0530 | INFO | Generated embeddings for 0 chunks
+2026-05-18T00:28:46.717665+0530 | WARNING | [NO CHUNKS] No chunks generated: ./Mock_Ingestion_files/empty.txt
+2026-05-18T00:28:46.717665+0530 | INFO | TOTAL INGESTED CHUNKS: 0
+2026-05-18T00:28:46.726942+0530 | INFO | SUCCESSFUL FILES: 0
+2026-05-18T00:28:46.726942+0530 | INFO | FAILED FILES: 1
+2026-05-18T00:28:46.726942+0530 | INFO | WARNING FILES: 2
+2026-05-18T00:29:04.605083+0530 | INFO | Starting batch ingestion: 1 files
+2026-05-18T00:29:04.605083+0530 | INFO | Starting ingestion: ./Mock_Ingestion_files/sample3.txt
+2026-05-18T00:29:04.628621+0530 | INFO | Starting structured extraction
+2026-05-18T00:29:04.628621+0530 | INFO | Extracted 1 blocks
+2026-05-18T00:29:04.637757+0530 | INFO | Starting chunking pipeline
+2026-05-18T00:29:04.639161+0530 | INFO | Generated 5 parent chunks and 18 child chunks
+2026-05-18T00:29:06.172105+0530 | INFO | Generated embeddings for 23 chunks
+2026-05-18T00:29:06.183919+0530 | INFO | [SUCCESS] File: ./Mock_Ingestion_files/sample3.txt | chunks=23
+2026-05-18T00:29:06.184652+0530 | INFO | TOTAL INGESTED CHUNKS: 23
+2026-05-18T00:29:06.185235+0530 | INFO | SUCCESSFUL FILES: 1
+2026-05-18T00:29:06.186385+0530 | INFO | FAILED FILES: 0
+2026-05-18T00:29:06.187101+0530 | INFO | WARNING FILES: 0
+2026-05-18T00:29:06.187678+0530 | INFO | Building indexes...
+2026-05-18T00:29:06.188232+0530 | INFO | Starting hybrid indexing
+2026-05-18T00:29:06.611759+0530 | INFO | Upserted 46 chunks into ChromaDB
+2026-05-18T00:29:06.611759+0530 | INFO | Building BM25 index
+2026-05-18T00:29:06.611759+0530 | INFO | Hybrid indexing completed
+2026-05-18T00:29:26.400417+0530 | INFO | Shutting down ingestion service

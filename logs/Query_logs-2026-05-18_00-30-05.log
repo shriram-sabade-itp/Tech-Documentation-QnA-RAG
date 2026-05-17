@@ -1,0 +1,19 @@
+2026-05-18T00:32:09.246729+0530 | INFO | Starting generation
+2026-05-18T00:32:09.662075+0530 | INFO | Starting QUERY SERVICE...
+2026-05-18T00:32:09.662075+0530 | INFO | Initializing ChromaDB
+2026-05-18T00:32:09.915300+0530 | INFO | Loading existing index...
+2026-05-18T00:32:09.915300+0530 | INFO | Initializing ChromaDB
+2026-05-18T00:32:09.945619+0530 | INFO | Building BM25 index
+2026-05-18T00:36:48.319618+0530 | INFO | Query: what is new in field of AI and NLP?
+2026-05-18T00:36:48.851487+0530 | INFO | Context length: 13793
+2026-05-18T00:36:53.098561+0530 | INFO | Generation completed
+2026-05-18T00:37:05.763860+0530 | INFO | Query: what are various ethical considerations surrounding AI?
+2026-05-18T00:37:06.300472+0530 | INFO | Context length: 13578
+2026-05-18T00:37:07.952188+0530 | INFO | Generation completed
+2026-05-18T00:37:28.592061+0530 | INFO | Query: what is CV?
+2026-05-18T00:37:29.035620+0530 | INFO | Context length: 10897
+2026-05-18T00:37:30.226016+0530 | INFO | Generation completed
+2026-05-18T00:37:50.066397+0530 | INFO | Query: who won yesterday's ipl match?
+2026-05-18T00:37:50.602404+0530 | INFO | Context length: 10954
+2026-05-18T00:37:51.811073+0530 | INFO | Generation completed
+2026-05-18T00:38:06.933835+0530 | INFO | Shutting down QUERY SERVICE
